@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object-single-card-task</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+	<div id="card-title"></div>
+
+	
+	<script>
+	
+		<!-- object -->
+		let card={
+			head:"Back-End Development Program (Python)",
+			icon:"fa fa-star",
+			course:"Tech-Stack Covered",
+			courseType:"GIT, Python, Flask (Blue Print) based API, MongoDB, HTML5, CSS3.",
+			option:"Financing options",
+			courseDur:"Month-to-month Installments",
+			pack:"Average Salary",
+			packageYear:"3.2 LPA",
+			branch:"Batch Size / Branch",
+			branchYear:"10",
+			duration:"Program Duration",
+			durationMouths:"3 Months",
+			learn:"Learning Mode",
+			classroom:"Classroom / Online",
+			button:"learn more"
+		}
+		    console.log(card)
+		
+		<!-- createElement -->
+		
+		var cardHead= document.createElement("h1");
+			cardIcon= document.createElement("i");
+			cardCourse= document.createElement("h5");
+			cardCourseType= document.createElement("p");
+			cardOption= document.createElement("h5");
+			cardCourseDur= document.createElement("p");
+			cardPack= document.createElement("h5");
+			cardPackageYear= document.createElement("p");
+			cardBranch= document.createElement("h5");
+			cardBranchYear= document.createElement("p");
+			cardDuration= document.createElement("h5");
+			cardDurationMouths= document.createElement("p");
+			cardLearn= document.createElement("h5");
+			cardClassroom= document.createElement("p");
+			cardButton= document.createElement("button");
+			
+			cardSec= document.createElement("div");
+		
+		
+		<!-- obj value assign to element -->
+		
+		cardHead.innerHTML =card.head;
+		<!-- cardIcon.innerHTML =card.icon; -->
+		cardCourse.innerHTML =card.course;
+		cardCourseType.innerHTML =card.courseType;
+		cardOption.innerHTML =card.option;
+		cardCourseDur.innerHTML =card.courseDur;
+		cardPack.innerHTML =card.pack;
+		cardPackageYear.innerHTML =card.packageYear;
+		cardBranch.innerHTML =card.branch;
+		cardBranchYear.innerHTML =card.branchYear;
+		cardDuration.innerHTML =card.duration;
+		cardDurationMouths.innerHTML =card.	durationMouths;
+		cardLearn.innerHTML =card.learn;
+		cardClassroom.innerHTML =card.classroom;
+		cardButton.innerHTML =card.button;
+		
+		
+		
+		console.log(cardHead,cardIcon,cardCourse,cardCourseType,cardOption,cardCourseDur,cardPack,cardPackageYear,cardBranch,cardBranchYear,cardDuration,cardDurationMouths,cardLearn,cardClassroom,cardButton)
+		<!-- add class to element -->
+		
+		cardHead.setAttribute("class","head")
+		cardIcon.setAttribute("class","fa fa-star")
+		cardSec.setAttribute("class","card")
+		
+		
+		
+		
+		<!-- appendChild -->
+		
+		cardSec.appendChild(cardHead)
+		cardSec.appendChild(cardIcon)
+		cardSec.appendChild(cardCourse)
+		cardSec.appendChild(cardCourseType)
+		cardSec.appendChild(cardOption)
+		cardSec.appendChild(cardCourseDur)
+		cardSec.appendChild(cardPack)
+		cardSec.appendChild(cardPackageYear)
+		cardSec.appendChild(cardBranch)
+		cardSec.appendChild(cardBranchYear)
+		cardSec.appendChild(cardDuration)
+		cardSec.appendChild(cardDurationMouths)
+		cardSec.appendChild(cardLearn)
+		cardSec.appendChild(cardClassroom)
+		cardSec.appendChild(cardButton)
+		
+		
+		console.log(cardSec)
+		
+		var cardTitle = document.getElementById("card-title")
+		
+		cardTitle.appendChild(cardSec)
+		
+	
+	
+	
+	
+	</script>
+</body>
+</html>
